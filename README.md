@@ -258,9 +258,9 @@ Raw bytes (Ethernet frame)
 
 ---
 
-## 🆚 Java vs Original C++ — What Changed
+## 🆚 Java vs C++ 
 
-| Aspect | C++ Original | Java Edition |
+| Aspect | C++  | Java |
 |---|---|---|
 | **GUI** | None — CLI only | ✅ Full live Swing dashboard |
 | **Alerts** | None | ✅ Real-time alert engine with 6 alert types |
@@ -297,14 +297,6 @@ Raw bytes (Ethernet frame)
 | `org.slf4j:slf4j-simple` | 2.0.9 | Logging facade |
 
 **No native libraries. No libpcap. No JNI. Runs on any OS with Java 17+.**
-
----
-
-## 🤝 Inspired By
-
-This project is a complete Java reimagination of [perryvegehan/Packet_analyzer](https://github.com/perryvegehan/Packet_analyzer) — originally written in C++. The core DPI concepts (SNI extraction, five-tuple tracking, flow-based blocking) are preserved, while the implementation is rebuilt with Java-native concurrency primitives, a full GUI, and a real-time alert system.
-
----
 
 <div align="center">
 
