@@ -176,7 +176,7 @@ Maven 3.6+  →  mvn -version
 ### Build
 ```bash
 git clone https://github.com/yourusername/dpi-packet-analyzer
-cd dpi-packet-analyzer/dpi-analyzer
+cd dpi-packet-analyzer
 mvn clean package
 ```
 
