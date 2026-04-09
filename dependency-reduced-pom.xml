@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>com.dpianalyzer</groupId>
-  <artifactId>dpi-packet-analyzer</artifactId>
-  <name>DPI Packet Analyzer</name>
+  <groupId>com.packetscope</groupId>
+  <artifactId>packetscope-network-analyzer</artifactId>
+  <name>PacketScope Network Analyzer</name>
   <version>1.0.0</version>
-  <description>Deep Packet Inspection Engine with Live GUI Dashboard and Real-time Alerts</description>
+  <description>PacketScope Network Traffic Analyzer - Real-time Network Monitoring and Deep Packet Inspection Engine</description>
   <build>
     <plugins>
       <plugin>
@@ -14,10 +14,10 @@
         <configuration>
           <archive>
             <manifest>
-              <mainClass>com.dpianalyzer.Main</mainClass>
+              <mainClass>com.packetscope.Main</mainClass>
             </manifest>
           </archive>
-          <finalName>dpi-analyzer</finalName>
+          <finalName>packetscope-analyzer</finalName>
         </configuration>
       </plugin>
       <plugin>
@@ -30,10 +30,10 @@
               <goal>shade</goal>
             </goals>
             <configuration>
-              <finalName>dpi-analyzer-full</finalName>
+              <finalName>packetscope-analyzer-full</finalName>
               <transformers>
                 <transformer>
-                  <mainClass>com.dpianalyzer.Main</mainClass>
+                  <mainClass>com.packetscope.Main</mainClass>
                 </transformer>
               </transformers>
             </configuration>

@@ -1,15 +1,15 @@
 <div align="center">
 
-# 🔍 DPI Packet Analyzer
+# 🔍 PacketScope Network Analyzer
 
-### Deep Packet Inspection Engine — Java Edition
+### Network Traffic Monitoring & Analysis Engine — Java Edition
 
 [![Java](https://img.shields.io/badge/Java-23-orange?style=for-the-badge&logo=openjdk)](https://openjdk.org/)
 [![Maven](https://img.shields.io/badge/Maven-3.9-red?style=for-the-badge&logo=apachemaven)](https://maven.apache.org/)
 [![JFreeChart](https://img.shields.io/badge/JFreeChart-1.5.4-blue?style=for-the-badge)](https://www.jfree.org/jfreechart/)
 [![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
 
-> A production-grade **Deep Packet Inspection** system built in Java — featuring a **live GUI dashboard**, **real-time security alerts**, **multi-threaded packet processing**, and **TLS SNI extraction** — capable of classifying network traffic across 20+ applications without any native libraries.
+> A production-grade **Network Traffic Analysis** system built in Java — featuring a **live GUI dashboard**, **real-time security alerts**, **multi-threaded packet processing**, and **Deep Packet Inspection (DPI)** — capable of classifying network traffic across 20+ applications without any native libraries.
 
 [Features](#-features) • [Architecture](#-architecture) • [Getting Started](#-getting-started) • [How It Works](#-how-it-works) • [Screenshots](#-dashboard-preview)
 
@@ -19,9 +19,9 @@
 
 ## 🎯 What Is This?
 
-When you visit `https://www.youtube.com`, your browser sends a **TLS Client Hello** — and buried inside that handshake, in **plain text**, is the domain name. This project captures that moment.
+When you visit `https://www.youtube.com`, your browser sends a **TLS Client Hello** — and buried inside that handshake, in **plain text**, is the destination domain. This project captures that moment.
 
-The **DPI Packet Analyzer** reads raw network captures (`.pcap` files), tears apart every Ethernet frame byte-by-byte, extracts hidden domain names from encrypted HTTPS traffic, classifies connections by application, enforces blocking rules, and renders everything in a live dashboard — all in real time.
+The **PacketScope Network Analyzer** reads raw network captures (`.pcap` files), tears apart every Ethernet frame byte-by-byte, extracts hidden domain names from encrypted HTTPS traffic, classifies connections by application, enforces blocking rules, and renders everything in a live dashboard — all in real time.
 
 This is the kind of technology used by ISPs, enterprise firewalls, and parental control systems — rebuilt from scratch in pure Java.
 
@@ -123,9 +123,9 @@ This is the kind of technology used by ISPs, enterprise firewalls, and parental 
 ## 📦 Project Structure
 
 ```
-dpi-packet-analyzer/
+packetscope-network-analyzer/
 ├── pom.xml
-└── src/main/java/com/dpianalyzer/
+└── src/main/java/com/packetscope/
     │
     ├── Main.java                        ← Entry point (GUI + --debug mode)
     │
@@ -152,7 +152,7 @@ dpi-packet-analyzer/
     │   └── AlertEngine.java             ← Threshold + port + block alerts + listeners
     │
     ├── core/
-    │   └── DPIEngine.java               ← Orchestrator: threads, queues, callbacks
+    │   └── PacketScopeEngine.java       ← Orchestrator: threads, queues, callbacks
     │
     ├── gui/
     │   ├── DashboardGUI.java            ← Live Swing dashboard
@@ -175,18 +175,18 @@ Maven 3.6+  →  mvn -version
 
 ### Build
 ```bash
-git clone https://github.com/yourusername/dpi-packet-analyzer
-cd dpi-packet-analyzer
+git clone https://github.com/yourusername/packetscope-network-analyzer
+cd packetscope-network-analyzer
 mvn clean package
 ```
 
 ### Run
 ```bash
 # Launch GUI
-java -jar target/dpi-analyzer-full.jar
+java -jar target/packetscope-analyzer-full.jar
 
 # Run pipeline debug test
-java -jar target/dpi-analyzer-full.jar --debug
+java -jar target/packetscope-analyzer-full.jar --debug
 ```
 
 ### Quick Start

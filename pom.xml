@@ -5,13 +5,13 @@
          http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.dpianalyzer</groupId>
-    <artifactId>dpi-packet-analyzer</artifactId>
+    <groupId>com.packetscope</groupId>
+    <artifactId>packetscope-network-analyzer</artifactId>
     <version>1.0.0</version>
     <packaging>jar</packaging>
 
-    <name>DPI Packet Analyzer</name>
-    <description>Deep Packet Inspection Engine with Live GUI Dashboard and Real-time Alerts</description>
+    <name>PacketScope Network Analyzer</name>
+    <description>PacketScope Network Traffic Analyzer - Real-time Network Monitoring and Deep Packet Inspection Engine</description>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
@@ -51,10 +51,10 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>com.dpianalyzer.Main</mainClass>
+                            <mainClass>com.packetscope.Main</mainClass>
                         </manifest>
                     </archive>
-                    <finalName>dpi-analyzer</finalName>
+                    <finalName>packetscope-analyzer</finalName>
                 </configuration>
             </plugin>
             <plugin>
@@ -66,10 +66,10 @@
                         <phase>package</phase>
                         <goals><goal>shade</goal></goals>
                         <configuration>
-                            <finalName>dpi-analyzer-full</finalName>
+                            <finalName>packetscope-analyzer-full</finalName>
                             <transformers>
                                 <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
-                                    <mainClass>com.dpianalyzer.Main</mainClass>
+                                    <mainClass>com.packetscope.Main</mainClass>
                                 </transformer>
                             </transformers>
                         </configuration>
