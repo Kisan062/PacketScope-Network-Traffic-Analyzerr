@@ -23,7 +23,7 @@ When you visit `https://www.youtube.com`, your browser sends a **TLS Client Hell
 
 The **PacketScope Network Analyzer** reads raw network captures (`.pcap` files), tears apart every Ethernet frame byte-by-byte, extracts hidden domain names from encrypted HTTPS traffic, classifies connections by application, enforces blocking rules, and renders everything in a live dashboard - all in real time.
 
-This is the kind of technology used by ISPs, enterprise firewalls, and parental control systems — rebuilt from scratch in pure Java.
+This is the kind of technology used by ISPs, enterprise firewalls, and parental control systems - rebuilt from scratch in pure Java.
 
 ---
 
