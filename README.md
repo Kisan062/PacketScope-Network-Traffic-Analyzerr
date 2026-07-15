@@ -9,7 +9,7 @@
 [![JFreeChart](https://img.shields.io/badge/JFreeChart-1.5.4-blue?style=for-the-badge)](https://www.jfree.org/jfreechart/)
 [![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
 
-> A production-grade **Network Traffic Analysis** system built in Java - featuring a **live GUI dashboard**, **real-time security alerts**, **multi-threaded packet processing**, and **Deep Packet Inspection (DPI)** — capable of classifying network traffic across 20+ applications without any native libraries.
+> A production-grade **Network Traffic Analysis** system built in Java - featuring a **live GUI dashboard**, **real-time security alerts**, **multi-threaded packet processing**, and **Deep Packet Inspection (DPI)** - capable of classifying network traffic across 20+ applications without any native libraries.
 
 [Features](#-features) • [Architecture](#-architecture) • [Getting Started](#-getting-started) • [How It Works](#-how-it-works) • [Screenshots](#-dashboard-preview)
 
